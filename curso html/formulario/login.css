@@ -1,0 +1,86 @@
+html {
+    background-color: #95a5a6;
+    font-family: "Helveticaneue", Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+form {
+    width: 420px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 1em;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+
+}
+
+
+input, label {
+    display: block;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+       
+}
+
+label{
+    margin-bottom: .25em;
+    
+}
+
+input{
+    padding: .75em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+    border: 1.5px solid #bbb;
+    font-size: 1em;
+    
+}
+
+legend {
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: #454e4f;
+    font-size: 1.2em;
+}
+
+
+
+
+.btn-div{
+    display: flex;
+   gap: 1em;
+   
+   
+}
+
+.btn2 {
+   width: fit-content;
+   padding: 10px 55px;
+   
+   
+}
+.btn2:hover{
+    
+    background-color: #2603c2;
+    cursor: pointer;
+    color: white;
+}
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Font face</title>
+
+    <style>
+
+        @font-face{
+            font-family: nadia;
+            src:
+            local("Nadia Serif"),
+            local("Nadia-Serif")
+            url(fonts/nadia/nadia-serif.ttf) format("truetype"),
+            url(fonts/nadia/nadia-serif.woff) format("woff"),
+            url(fonts/nadia/nadia-serif.svg) format("svg");
+        }
+
+        @font-face {
+    font-family: chunkfiveregular;
+    src: 
+    url(fonts/chunkRegular/chunkfive-regular-webfont.woff2) format('woff2'),
+    url(fonts/chunkRegular/chunkfive-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+        }
+
+        h1{
+            font-family: chunkfiveregular, nadia, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font-Face</h1>
+</body>
+</html>

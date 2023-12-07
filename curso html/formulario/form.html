@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Form</title>
+
+    <style>
+        body {
+            padding-bottom: 100vh;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Introdução</legend>
+
+            <input type="email" name="E-mail" required>
+            <br><br>
+            <label for="filhos">Quantidade de filhos</label>
+            <br>
+            <input type="number" id="filhos" min="0" max="50">
+            <br><br>
+            <input type="date" min="2023-01-15" max="2023-12-25">
+            <br><br>
+            possui atividade estra?
+            <label>
+                <input type="radio" name="atv" value="s"> Sim
+            </label>
+
+            <label>
+                <input type="radio" name="atv" value="n"> Não
+            </label>
+
+            <br><br><br>
+
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Area de interesse</legend>
+            <label>
+                <input type="checkbox" name="interesse" value="HTML">HTML
+            </label>
+
+            <label>
+                <input type="checkbox" name="interesse" value="CSS">CSS
+            </label>
+
+            <label>
+                <input type="checkbox" name="interesse" value="JAVA">JAVA
+            </label>
+
+            <label>
+                <input type="checkbox" name="interesse" value="Javascript">Javascript
+            </label>
+
+            <label>
+                <input type="checkbox" name="interesse" value="Python">Python
+            </label>
+            <br><br>
+
+            <label>Escolha uma linguagem
+                <br><br>
+
+                <select name="linguagem" required multiple size="8">
+                    <option value="">selecione uma opcao</option>
+                    <optgroup label="frontend">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="java">JAVA</option>
+                    </optgroup>
+
+
+                    <optgroup label="back-end">
+                        <option value="Python">PYTHON</option>
+                        <option value="js">Javascripit</option>
+                    </optgroup>
+
+
+                </select>
+
+                <input type="text" list="linguagemList">
+
+                <datalist id="linguagemList">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JAVA">
+                    <option value="Javascripit">
+                    <option value="PYTHON">
+                    <option value="PHP">
+                </datalist>
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="msg" cols="30" rows="10" maxlength="2"></textarea>
+            <br><br>
+            <textarea cols="30" rows="10" readonly* disabled >
+    contrato
+     1.1 regra 1
+            </textarea >
+            <label>
+                <input type="checkbox" checked>Li e aceito o contrato
+            </label>
+
+            <br>
+            <br>
+
+            <input type="file">
+        </fieldset>
+
+        <br><br><br>
+        <input type="button" value="ok">
+        <input type="submit" value="mandar">
+        <input type="range" max="50" min="0">
+        <input type="time">
+        <input type="color">
+
+        <button type="submit"><em>mandar com tag</em></button>
+    </form>
+
+</body>
+
+</html>

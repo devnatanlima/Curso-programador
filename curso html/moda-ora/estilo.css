@@ -1,0 +1,138 @@
+:root {
+    --large-default-padding: 6.5em;
+    --medium-default-padding: 4em;
+}
+
+body{
+    font-family: roboto, Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+
+
+.logotipo {
+    margin: .5em 0 .5em 8.4375em;
+    color: white;
+}
+
+#principal {
+    width: 64em;
+    margin: 1.25em auto;
+    
+}
+
+h1,
+h2 {
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: normal;
+}
+
+.header-top{
+    background-color: #162028;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo {
+    margin: .5em 0 .5em 4.4375em;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1em 0 0;
+    padding: 1em;
+    
+    
+}
+
+.link {
+    color: #425564;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: .15em;
+    transition: color .1s linear;
+}
+
+.link:hover{
+    color: white;
+}
+
+.portifolio h1{
+    color: #555;
+    text-align: center;
+    width: 500px;
+    margin: 50px auto 30px;
+    
+}
+
+.portifolio p{
+    color: #555;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+}
+
+.gallery{
+    color: #555;
+    display: flex;
+    gap: 2em;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.gallery-title {
+    letter-spacing: .15em;
+    text-align: center;
+}
+
+.gallery-text {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.final{
+    background-color: #003d52;
+    padding: var(--large-default-padding);
+    background-image: url(imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    color: white;
+}
+
+.final h2{
+    text-align: left;
+    margin-right: 25%;
+    font-size: 2em;
+}
+
+.final p{
+    text-align: left;
+    margin-right: 25%;
+}
+footer{
+    background-color: #162028;
+    padding: 1em;
+    text-align: center;
+    color: #b1a6a6
+}
+
+
+
+
+
+
+
+

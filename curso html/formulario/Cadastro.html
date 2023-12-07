@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formulario</title>
+    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root{
+            --login-primary-color: #3a68b7;
+        }
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: var(--login-primary-color);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .frm {
+            width: 90%;
+            max-width: 32rem;
+            padding: 1em;
+            background-image: linear-gradient(to right, rgba(0,0,0, .3) .5rem, white .5rem);
+        }
+
+        .fld {
+            border: none;
+            margin: 0;
+            padding: 0 1em;
+            margin-top: 2.5em;
+        }
+
+        input,
+        label {
+            display: flex;
+         
+
+        }
+
+        .lgd {
+            font-size: 1.5em;
+            color: rgb(49, 83, 177);
+            margin-bottom: .5em;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+
+        }
+        .lbl1, .lbl2{
+            font-size: .7em;
+            margin-bottom: 2em;
+            color: rgb(75, 71, 71);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            
+
+        }
+
+        .inp1, .inp2 {
+            border: transparent;
+            border-bottom: 2px solid var(--login-primary-color);
+            width: 100%;
+            margin-bottom: .8em;
+            outline: none;
+            padding: .5em 0;
+            transition: padding-left .08s;
+        }
+
+        .inp1:focus, .inp2:focus{
+            outline: 1px solid var(--login-primary-color);
+            padding-left: .3rem;
+        }
+
+        .btn{
+            background-color: var(--login-primary-color);
+            color: white;
+            padding: 1em;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            letter-spacing: .8px;
+
+        }
+
+        .btn:hover{
+            background-color: rgb(127, 135, 150);
+        }
+        .div2{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1.1em 0 1em 0;
+            
+        }
+        p{
+            
+            margin-left: 18em;
+            font-size: .7em;
+            
+            
+            
+        }
+        a{
+            font-size: 0.7em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form class="frm" action="#" method="get" autocomplete="off">
+        <fieldset class="fld">
+
+            <legend class="lgd">Cadastre-se</legend>
+            <label class="lbl1" for="usuario">USÚARIO</label>
+            <input class="inp1" type="text" name="usuario" id="usuario" required>
+
+            <label class="lbl1" for="usuario">EMAIL</label>
+            <input class="inp1" type="text" name="usuario" id="usuario" required>
+
+            <label class="lbl2" for="senha">SENHA</label>
+            <input class="inp2" type="password" name="senha" id="senha" required>
+
+
+           
+            <div class="div2">
+                <input class="btn" type="button" name="botao" value="CADASTRE-SE">
+                <p>Ja possui cadastro?</p>
+                <a href="index.html">Faça login</a>
+            </div>
+            
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
