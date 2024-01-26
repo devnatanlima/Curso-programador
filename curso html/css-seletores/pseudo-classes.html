@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <title>Pseudo-classes</title>
+
+          <style>
+                    button {
+                              background-color: rgb(109, 109, 109);
+                              color: white;
+                              border: none;
+                              padding: 1em;
+                    }
+
+                    button:disabled {
+                              opacity: .4;
+                    }
+
+                    p:empty::before {
+                              content: "paragrafo vazio??";
+                    }
+
+                    a:hover,
+                    a:focus {
+                              background-color: yellow;
+                    }
+
+                    input[type="text"]:read-write {
+                              background-color: rgb(115, 108, 108);
+                              border: none;
+                              padding: 1.5em;
+                    }
+
+                    input[type="text"]:disabled {
+                              background-color: aqua;
+                    }
+
+                    input[type="text"]:read-only:not(:disabled) {
+                              background-color: yellow;
+                    }
+
+                    input[type="text"]::placeholder {
+                              color: rgb(252, 255, 255);
+                    }
+
+                    input[type="text"]:placeholder-shown {
+                              background-color: aqua;
+                    }
+
+                    p:only-child {
+                              background-color: orange;
+
+                    }
+
+                    div:target {
+                              border: 4px dashed red;
+                    }
+          </style>
+</head>
+
+<body>
+          <div id="top">
+                    <a href="#titulo">vai para o titulo</a><br><br>
+                    <button>vai</button> <br>
+                    <button disabled>vai disabled</button>
+          </div>
+
+
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, quo.</p>
+          <p> </p>
+          <p></p>
+
+          <ul>
+                    <li><a href="#">link falso</a></li>
+                    <li><a href="#">link falso</a></li>
+                    <li><a href="#">link falso</a></li>
+                    <li><a href="#">link falso</a></li>
+          </ul>
+          <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+          <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+          <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+          <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+          <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+
+          <form action="#">
+                    <input type="text" value="valor inicial"><br><br>
+                    <input type="text" value="valor" disabled><br><br>
+                    <input type="text" value="valor" readonly><br><br>
+                    <input type="text" placeholder="placeholder"><br><br>
+
+                    <div>
+                              <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <hr>
+
+                    <div>
+                              <p>Lorem ipsum dolor sit amet.</p>
+                              <p>Lorem ipsum dolor sit amet.</p>
+                              <p contenteditable="">Paragrafo editável</p>
+                    </div>
+
+                    <div id="titulo">
+                              <h1 >titulo</h1>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, consequuntur?</p>
+                              <a href="#top">vai pra cima</a>
+                    </div>
+
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+</body>
+
+</html>
