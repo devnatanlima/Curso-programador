@@ -19,7 +19,35 @@
       table{
         border-collapse: collapse;
         width: 100%;
+        margin-bottom: 24px;
       }
+
+      th,td{
+        border-bottom: 1px solid #ddd;
+        padding: .5rem;
+      }
+
+      th{
+        background-color: #f2f2f2;
+        text-align: left;
+      }
+
+      tr:nth-child(even){
+        background-color: #f9f9f9;
+      }
+
+      tr:nth-child(odd){
+        background-color: white;
+      }
+
+      tr:hover{
+        background-color: #e9e9e9;
+      }
+
+      tr:has(td:first-child input[type = "checkbox"]:checked){
+        background-color: #aaffaa;
+      }
+
 
     </style>
 </head>
@@ -72,7 +100,7 @@
         eligendi atque, quos eius voluptate aliquid facilis harum modi, vero dolorem unde asperiores alias commodi,
         totam nisi? Architecto.</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos nam natus, nisi voluptatibus nobis impedit fuga
-        iste sint! Aliquam consectetur vel recusandae enim alias <a href="#">clique aqui para saber
+        iste sint! Aliquam consectetur vel recusandae enim alias <a href="#" class="teste">clique aqui para saber
             mais</a> reprehenderit aut et sunt? Natus explicabo esse nemo
         eligendi atque, quos eius voluptate aliquid facilis harum modi, vero dolorem unde asperiores alias commodi,
         totam nisi? Architecto.</p>
